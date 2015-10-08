@@ -80,7 +80,10 @@ PerCalPlus.GregorianDateToPersian(DateTime.Now) => "1394/07/16"
 ```
 If you need long string date you can use:
 
-```C# PerCalPlus.GregorianDateToPersianLong(DateTime.Now) => "پنجشنبه - 16 مهر - 1394"```
+```C# 
+PerCalPlus.GregorianDateToPersianLong(DateTime.Now) => "پنجشنبه - 16 مهر - 1394"
+```
+
 <h2>Converting from Persian date to Gregorian</h2>
 There is one method for this with five overload, two of them take int as argument:
 ```C#
