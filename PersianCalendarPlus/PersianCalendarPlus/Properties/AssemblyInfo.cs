@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("PersianCalendarPlus")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("PersianCalendarPlus is a simple wrapper around System.Globalization.PersianCalendar providing extra functionality.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("PersianCalendarPlus")]
