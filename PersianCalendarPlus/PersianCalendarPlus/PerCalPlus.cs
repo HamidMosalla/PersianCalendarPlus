@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 namespace PersianCalendarPlus
 {
     /*
-    * PerCalPlus v1
+    * PersianCalendarPlus v1
     * Copyright (c) 2015 Hamid Mosalla => http://hamidmosalla.com
-    * Licensed under the The MIT License (MIT)
+    * Licensed under The MIT License (MIT)
     * https://opensource.org/licenses/MIT
     * Just use it and enjoy, twitter handle: @xellarix
     */
