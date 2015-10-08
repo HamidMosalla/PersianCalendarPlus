@@ -71,7 +71,7 @@ PerCalPlus.ShortYearToLongYear("66") => "1366"
 ```
 <h2>Converting from Gregorian date to Persian</h2>
 There is two method that you can use for this purpose, if you want short date, you can use one of these three overload:
-```
+```C#
 PerCalPlus.GregorianDateToPersian(1999, 8, 2) => "1378/05/11"
 
 PerCalPlus.GregorianDateToPersian("5 / 27 / 2015 3:14:25 PM") => "1394/03/06"
@@ -80,16 +80,16 @@ PerCalPlus.GregorianDateToPersian(DateTime.Now) => "1394/07/16"
 ```
 if you need long string date you can use:
 
-```PerCalPlus.GregorianDateToPersianLong(DateTime.Now) => "پنجشنبه - 16 مهر - 1394"```
+```C# PerCalPlus.GregorianDateToPersianLong(DateTime.Now) => "پنجشنبه - 16 مهر - 1394"```
 <h2>Converting from Persian date to Gregorian</h2>
 There is one method for this with five overload, two of them take int as argument:
-```
+```C#
 PerCalPlus.PersianDateToGregorian(1366, 12, 2) => "2/21/1988 12:00:00 AM"
 
 PerCalPlus.PersianDateToGregorian(1366, 12, 2, 14, 22, 15) => "2/21/1988 2:22:15 PM"
 ```
 and the other three take a date string, note that use should specify what kind of date string you're supplying as argument through PerCalPlus.DateStringType enumeration, these three kind of string are the same as the one created by these three method:
-```
+```C#
 PerCalPlus.Now() => "1394/07/16 07:34:34 ب.ظ"
 
 PerCalPlus.ToShortDateString() => "1394/07/16"
@@ -97,7 +97,7 @@ PerCalPlus.ToShortDateString() => "1394/07/16"
 PerCalPlus.ToLongDateString() => "پنجشنبه - 16 مهر - 1394"
 ```
 and in the enum part of method argument you should specify what kind of date string you want to supply as an argument, these three are PerCalPlus.DateStringType.ToShortDateString and PerCalPlus.DateStringType.Now and PerCalPlus.DateStringType.ToLongDateString which correspond to the aforementioned methods, note that the date string should conform to the format that produced previously by the PersianCalendarPlus or it doesn't going to work:
-```
+```C#
 PerCalPlus.PersianDateToGregorian("1366 / 12 / 2", PerCalPlus.DateStringType.ToShortDateString) => "2/21/1988 12:00:00" AM
 
 PerCalPlus.PersianDateToGregorian("1394 / 07 / 13 08:44:28 ب.ظ", PerCalPlus.DateStringType.Now) => "10/5/2015 12:00:00 AM"
