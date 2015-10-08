@@ -101,7 +101,7 @@ PerCalPlus.ToLongDateString() => "پنجشنبه - 16 مهر - 1394"
 ```
 In the enum part of method argument you should specify what kind of date string you want to supply as an argument, these three are <strong>PerCalPlus.DateStringType.ToShortDateString</strong> and <strong>PerCalPlus.DateStringType.Now</strong> and <strong>PerCalPlus.DateStringType.ToLongDateString</strong> which correspond to the aforementioned methods, note that the date string should conform to the format that produced previously by the PersianCalendarPlus or it doesn't going to work:
 ```C#
-PerCalPlus.PersianDateToGregorian("1366 / 12 / 2", PerCalPlus.DateStringType.ToShortDateString) => "2/21/1988 12:00:00" AM
+PerCalPlus.PersianDateToGregorian("1366 / 12 / 2", PerCalPlus.DateStringType.ToShortDateString) => "2/21/1988 12:00:00 AM"
 
 PerCalPlus.PersianDateToGregorian("1394 / 07 / 13 08:44:28 ب.ظ", PerCalPlus.DateStringType.Now) => "10/5/2015 12:00:00 AM"
 
