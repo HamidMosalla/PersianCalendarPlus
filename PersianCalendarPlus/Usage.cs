@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PersianCalendarPlus
+﻿namespace PersianCalendarPlus
 {
+    using System.Diagnostics;
+
     class Usage
     {
         static void Main(string[] args)
@@ -20,8 +15,11 @@ namespace PersianCalendarPlus
 
             Debug.WriteLine("PerCalPlus.Now() => " + PerCalPlus.Now());
             Debug.WriteLine("PerCalPlus.ToShortDateString() => " + PerCalPlus.ToShortDateString());
+            Debug.WriteLine("PerCalPlus.ToShortDateDashedString() => " + PerCalPlus.ToShortDateDashedString());//new need convert
             Debug.WriteLine("PerCalPlus.ToLongDateString() => " + PerCalPlus.ToLongDateString());
 
+
+            
             Debug.WriteLine("PerCalPlus.GetPersianYear() => " + PerCalPlus.GetPersianYear());
             Debug.WriteLine("PerCalPlus.GetPersianYear(1988) => " + PerCalPlus.GetPersianYear(1988));
             Debug.WriteLine("PerCalPlus.GetPersianMonth() => " + PerCalPlus.GetPersianMonth());

@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PersianCalendarPlus
+﻿namespace PersianCalendarPlus
 {
+    using System.Globalization;
+
     /*
     * PersianCalendarPlus v1
     * Copyright (c) 2015 Hamid Mosalla => http://hamidmosalla.com
@@ -43,8 +38,16 @@ namespace PersianCalendarPlus
             return GetDayOfWeekName() + " - " + PerCal.GetDayOfMonth(DateTime.Now) + " " + GetMonthName() + " - " +
                    PerCal.GetYear(DateTime.Now);
         }
+        public static string ToShortDateDashedString()
+        {
+            PersianCalendar PerCal = new PersianCalendar();
 
+            return string.Format("{0:0000}-{1:00}-{2:00}"
+                , PerCal.GetYear(DateTime.Now)
+                , PerCal.GetMonth(DateTime.Now)
+                , PerCal.GetDayOfMonth(DateTime.Now));
 
+        }
 
         public static int GetPersianYear()
         {
@@ -295,7 +298,7 @@ namespace PersianCalendarPlus
             }
         }
 
-
+        //make a converter for this format too 10/26/2015
         public static string GregorianDateToPersian(int year, int month, int day)
         {
             try
